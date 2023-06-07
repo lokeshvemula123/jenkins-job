@@ -1,7 +1,7 @@
 pipeline {
    environment {
-     git_url = "https://github.com/salilkul/MyRepo.git"
-     // git_branch = "master"
+     git_url = "https://github.com/lokeshvemula123/jenkins-job.git"
+      git_branch = "master"
    }
 
  //agent {label 'dev'}
@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Pull Source') {
       steps {
-        git credentialsId: 'ff6d7224-fa35-465b-a41b-93ff8a6d2663', branch: "${branch}", url: "${git_url}"
+        git credentialsId: '9e554d5b-d81d-4683-9741-c8aba2f8dd6d', branch: "${branch}", url: "${git_url}"
        
       }
      }
